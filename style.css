@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap'); /*Eu importei uma fonte direto do google fonts*/
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Source Code Pro", monospace;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /*100vh para ocupar a tela inteira*/
+    overflow: hidden; /*isso não vai ter scrool*/
+    background: radial-gradient(circle,rgba(238, 174, 202, 1) 30%, rgba(148, 187, 233, 1) 100%);/*coloquei o circule para criar uma circulo e colocar as duas cores, deixando em tom em degrade*/
+    position: relative;
+}
+
+.form{
+   width: 400px;
+   background-color: rgba(255,255,255, 0.15);
+   border: 2px solid rgba(255,255,255, 0.2);
+   border-radius: 15px;
+   box-shadow: 0 5px 30px rgba(0,0,0,0.8
+   );
+   color: #fff;
+   padding: 20px;  
+   
+   
+}
+
+h1 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.caixa-form{
+   position: relative;
+   margin-bottom: 20px;
+   border-radius: 8px;
+   padding: 3px;  
+}
+
+.caixa-form input{
+    width: 100%;
+    height: 50px;
+    border: solid 2px rgba(255,255,255, 0.2);
+    border-radius: 8px;
+    outline: none; /*tirei a borda do input*/
+    color: #fff;
+    background-color: rgba(255,255,255, 0.20);
+    font-size: 16px;
+    padding: 0 10px;
+}
+
+/*quero mudar a cor do texto do input, então tenho que fazer isso*/
+
+.caixa-form input::placeholder{
+    color: #fff;
+}
+
+/*agora quero colocar os icones dentro da caixinha do input também*/
+.caixa-form i{
+    position: absolute;/*usei o absolute porque posso posicionar aonde eu quiser...So preciso jogar ele pra esquerda, pra isso vou usar o rigth*/
+    right: 20px;
+    font-size: 20px;
+    top: 30%;
+}
+
+.caixa-lembrar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;/*criou uma espaçamento entre os item*/
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.caixa-lembrar label{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.caixa-lembrar label input{
+    accent-color: rgb(11, 208, 208);
+}
+.caixa-lembrar a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.caixa-lembrar a:hover{
+    text-decoration: underline;
+}
+
+button{
+    width: 100%;
+    height: 35px;
+    background-color: #10f6db;
+    border-radius: 7px;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    transition: all 0.3s;
+}
+
+button:hover{
+    background-color: #fff;
+    color: #058677;
+    transform: translateY(-3px);
+    
+}
+
